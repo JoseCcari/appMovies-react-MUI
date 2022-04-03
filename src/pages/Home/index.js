@@ -3,7 +3,7 @@ import { Container , Typography , Card, Grid , TextField , Button} from '@mui/ma
 import styles from './style'
 function Home() {
 	const [searchText , setSearchText] = useState("");
-  const clases = styles();
+  const clases = styles()
 	const handleSearchTextChange = (event) => {
 		setSearchText(event.target.value)
 	}
@@ -31,8 +31,8 @@ function Home() {
 			onChange={handleSearchTextChange}
       className= {clases.TextFieldSearch}
 			/>
-			<Grid className= {clases.buttonsContainer}>
-					<Button variant= "contained" onClick={handleCleanClick}> Limpiar</Button>
+			<Grid className= {clases.buttonsContainer} >
+					<Button variant= "outlined" onClick={handleCleanClick}> Limpiar</Button>
 					<Button 
           variant= "contained" 
           color="primary" 
